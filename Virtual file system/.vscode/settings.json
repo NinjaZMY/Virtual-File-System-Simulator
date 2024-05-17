@@ -1,0 +1,8 @@
+{
+    "workbench.colorTheme": "Dark (Molokai)",
+    "workbench.colorCustomizations": {
+        "editorInfo.foreground": "#0080ff6a",
+        "titleBar.activeBackground": "#4b3e56dd",
+        "activityBar.background": "#3f324aaa"
+    }
+}

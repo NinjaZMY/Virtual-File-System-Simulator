@@ -1,0 +1,50 @@
+{
+    "documents": {
+        "$ROOTPATH$\\vsf.js": {
+            "key": "$ROOTPATH$\\vsf.js",
+            "bookmarks": {
+                "120": {
+                    "line": 139,
+                    "char": 55
+                },
+                "122": {
+                    "line": 141,
+                    "char": 101
+                },
+                "168": {
+                    "line": 195,
+                    "char": 36
+                },
+                "176": {
+                    "line": 203,
+                    "char": 0
+                },
+                "177": {
+                    "line": 204,
+                    "char": 0
+                },
+                "178": {
+                    "line": 205,
+                    "char": 0
+                },
+                "280": {
+                    "line": 307,
+                    "char": 103
+                }
+            }
+        }
+    },
+    "history": {
+        "history": [
+            {
+                "documentKey": "$ROOTPATH$\\vsf.js",
+                "bookmarkKey": "150"
+            },
+            {
+                "documentKey": "$ROOTPATH$\\vsf.js",
+                "bookmarkKey": "163"
+            }
+        ],
+        "index": 0
+    }
+}
