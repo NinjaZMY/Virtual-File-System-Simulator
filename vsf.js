@@ -7,9 +7,9 @@
     let isAngular=window.ng ? 1 : 0 ; 
     //( () => {  let isAngular=window.ng ? 1 : 0 ; return isAngular? "angular running" : "no angular" ;    }  ) () ;
     let angularPath="/assets/";
-let AngularState= isAngular ? "\n\n\n                                             Ｔｈｅ　Ｇｌｏｂａｌ　ＶＳＦ　Ｌｉｂｒａｒｙ　                                   \n\n                                                                       ｉｓ　ｒｕｎｎｉｎｇ\n\n 　                                                                         ｉｎｓｉｄｅ　                   　\n\n                                                   ＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋\n                                                    ｜Ａ｜｜Ｎ｜｜Ｇ｜｜Ｕ｜｜Ｌ｜｜Ａ｜｜Ｒ｜\n                                                    ＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋\n\n\n                                                                              Ａｎｇｕｌａｒ \n\n\n    " 
+let AngularState= isAngular ? "\n\n\n                                             Ｔｈｅ　Ｇｌｏｂａｌ　ＶＳＦ　Ｌｉｂｒａｒｙ　                                   \n\n                                                                       ｉｓ　ｒｕｎｎｉｎｇ\n\n 　                                                                         ｉｎｓｉｄｅ　                   　\n\n                                                   ＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋\n                                                    ｜Ａ｜｜Ｎ｜｜Ｇ｜｜Ｕ｜｜Ｌ｜｜Ａ｜｜Ｒ｜\n                                                    ＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋\n\n\n                                                                              Ａｎｇｕｌａｒ \n\n\n    " 
     
-    : "No Angular, then you Can witness the power of Native JavaScript " + " for this enviornement" ;
+    : "\n\n No Angular, then you Can witness the power of Native JavaScript for this enviornement\n\n\n                                             Ｔｈｅ　Ｇｌｏｂａｌ　ＶＳＦ　Ｌｉｂｒａｒｙ　                                   \n\n                                                                       ｉｓ　ｒｕｎｎｉｎｇ\n\n";
     let isAngImg  =  isAngular ? "ang.png" : "js.jpg"  ;
     if ( isAngular) isAngImg=angularPath+isAngImg;
     //consoleimg.load(isAngImg); 
