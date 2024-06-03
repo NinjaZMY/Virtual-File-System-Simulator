@@ -1,7 +1,5 @@
 //vsf.js
-//import { consoleimg } from '../export consoleimg.min.js';
-// cannot import in this version which is a global version 
-
+import { consoleimg } from '../export consoleimg.min.js';
 //tracking whether angular is running or not below 
 //isAngular=window.ng; isAngular? "angular running" : "no angular" 
     let isAngular=window.ng ? 1 : 0 ; 
@@ -10,9 +8,8 @@
     let AngularState= isAngular ? "＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋\n｜Ａ｜｜Ｎ｜｜Ｇ｜｜Ｕ｜｜Ｌ｜｜Ａ｜｜Ｒ｜\n＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋" : "No Angular, then you Can witness the power of Native JavaScript " + " for this enviornement" ;
     let isAngImg  =  isAngular ? "ang.png" : "js.jpg"  ;
     if ( isAngular) isAngImg=angularPath+isAngImg;
-    //consoleimg.load(isAngImg); 
-    console.log("image path : "+isAngImg);
-    console.info(  AngularState  ); 
+    consoleimg.load(isAngImg); 
+    //console.info(  AngularState  ); 
 //consoleimg.load("js.jpg"); 
 // start below this line 
 let Users = [{ start_index: 1 }];
@@ -688,4 +685,4 @@ if (!Background_img_on) {
     Background_img_on = false;
 }
 
-//console.info(  AngularState  ); 
+console.info(  AngularState  ); 
