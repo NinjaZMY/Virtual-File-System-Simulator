@@ -37,11 +37,12 @@ console.log(msg + a + b);
 //alert(msg + a + b);
 //location.reload()
 
-const dynamicScripts = ["/assets/consoleimg.min.js", "/assets/app.tinco.js"];//can insert multi scripts, as part of the array, each array elment is a script to be loaded 
+const dynamicScripts = ["/assets/old vsf.js", "/assets/consoleimg.min.js", "/assets/app.tinco.js", "/assets/export vsf.js"];//can insert multi scripts, as part of the array, each array elment is a script to be loaded 
 for (let i = 0; i < dynamicScripts.length; i++) {
   const node = document.createElement('script');
   node.src = dynamicScripts[i];
   node.type = 'text/javascript';
+  if (i == 3) node.type = "module";
   node.async = false;
   document.getElementsByTagName('head')[0].appendChild(node);
 }
