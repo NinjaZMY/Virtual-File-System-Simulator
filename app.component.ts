@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 //import { F } from '../assets/export vsf.js';//
 //import { } from "../assets/export vsf.js";
 
-import { a, consoleimg } from '../assets/export consoleimg.min.js'
+import { a, consoleimg, Start } from '../assets/export consoleimg.min.js'
 
 // import { verifyHostBindings } from '@angular/compiler';
 //
@@ -15,13 +15,13 @@ import { a, consoleimg } from '../assets/export consoleimg.min.js'
 export class AppComponent implements OnInit {
 
   ngOnInit(): void {
-    console.log("On Init function : here comes the sun turuturu, here comes the sun turuturu, here comes the sun, it's all right ");
+    log("On Init function : here comes the sun turuturu, here comes the sun turuturu, here comes the sun, it's all right ");
     //console.info(vsf);
     /*     consoleimg.load("/assets/ang.png");
         consoleimg.load("/assets/js.jpg") */
-    console.info("my retarded F equals :");
+    info("my retarded F equals :");
     // console.info(Folders);
-    console.info(Folders);
+    info(Folders);
 
 
 
@@ -30,22 +30,30 @@ export class AppComponent implements OnInit {
 
 
 
-  }
+  } //end of ngOnInit Function 
 
 
 
 
-}
+} // end of class AppComponent 
+
 //script starts below 
 //let a: any;
+let vsf = Start();
+let Users = vsf.Users;
+let ALL_Users = Users.ALL_Users;
+let AddUser = Users.AddUser;
+let log, warn, info, error;
+log = vsf.log; warn = vsf.warn; info = vsf.info; error = vsf.error;
+
 let b: any;
 b = " .. what's up";
 let uid = 0/*  | Start.uid; */
-let Users: any = [{ start_index: 1 }];
+//let Users: any = [{ start_index: 1 }];
 //Start.Users = Users;
-let Start = undefined // might replace it with exported value of vsf
-console.log("                                                                                                                             ⬆⬆⬆⬆⬆                      \n                                                      \n                                                                                                 The Console Line above which is a 🅱 \n                                                                                                 Lower Case B of the exported module,\n                                                                                                  is a proof that the object variable\n                                                                                                  had been successfully exported \n                                                                                                 into the Angular App Code\n                          \n🅰 Inside Angular App 🤓☝ \ntypeof a: " + typeof a, "\na equals: ", a, "\n a.b()       returns             ", a.b(), "\n a.start() returns             ", a.start());
-function stringifyObject(obj) {
+let S = a.start(); // might replace it with exported value of vsf
+console.log("                                                                                                                             ⬆⬆⬆⬆⬆                      \n                                                      \n                                                                                                 The Console Line above which is a 🅱 \n                                                                                                 Lower Case B of the exported module,\n                                                                                                  is a proof that the object variable\n                                                                                                  had been successfully exported \n                                                                                                 into the Angular App Code\n                          \n🅰 Inside Angular App 🤓☝ \ntypeof a: " + typeof a, "\na equals: ", a, "\n a.b()       returns             ", a.b(), "\n a.start() returns             ", S);
+/* function stringifyObject(obj) {
   const result = {};
   for (const [key, value] of Object.entries(obj)) {
     if (typeof value === 'function') {
@@ -55,14 +63,32 @@ function stringifyObject(obj) {
     }
   }
   return JSON.stringify(result, null, 2);
-}
+}// already exisiting in the exported object 
+ */
+
 //console.table([{ str: "a", val: a + "  => " + stringifyObject(a) }, { str: "a.start", val: a.start() + "  => " + a.start.toString() }, { str: "a.b", val: a.b() + "  => " + a.b.toString() }])
 
-console.table([{ str: "a", val: stringifyObject(a) }, { str: "a.start", val: a.start() }, { str: "a.b", val: a.b() }])
+console.table([{ str: "a", val: a.c(a) }, { str: "a.start", val: S }, { str: "a.b", val: a.b() }])
 
 //Start();
 //Start.AddUser(uid, "user 0");
-console.warn(Users);
+warn(a.Users);
+//AddUser(uid, "");
+//delete Users[1]; Users.length--;
+log("Users at 0 when  Start function had been called once  : ");
+ALL_Users();
+log("Last Added User ", Users[Users.length - 1]);
+log("Running AddUser");
+//log(users, "  users x Users ", Users);
+AddUser("");
+log("ALL users velow")
+ALL_Users();
+// console.log(Users.AddUser(uid, "")) // serves as adding user x logging 
+AddUser("")
+log("ALL users velow")
+
+//console.log("Current Users below:")//for debugging 
+ALL_Users();
 let Folders: any = [{ start_index: 1 }];
 //console.warn("hey", typeof vsf);
 //let Folders: any = vsf.Folders;
@@ -71,7 +97,7 @@ let query: any = [{ start_index: 1 }];;
 
 let msg: any = "Users : " + JSON.stringify(Users) + "\n Folders : " + JSON.stringify(Folders[0]) + "\n query : " + JSON.stringify(query[0]) + "\n";
 
-console.log(msg + a + b);
+log(msg + a + b);
 //alert(msg + a + b);
 //location.reload()
 
@@ -80,14 +106,14 @@ console.log(msg + a + b);
 
 
 
-console.log(consoleimg);
+log(consoleimg);
 //console.log(ci.consoleimg);
 
 
 const AngularStart: any = () => {
 
 
-  console.log("Angular Start dom loaded");
+  log("Angular Start dom loaded");
   //testing the consoleimg.load("img_string") function 
   // the function isn't working because it isn't declared here as it seems 
   const dynamicScripts = ["/assets/old vsf.js", "/assets/consoleimg.min.js", "/assets/app.tinco.js", "/assets/export vsf.js"];//can insert multi scripts, as part of the array, each array elment is a script to be loaded 
