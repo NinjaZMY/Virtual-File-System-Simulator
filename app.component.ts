@@ -43,8 +43,10 @@ let vsf = Start();
 let Users = vsf.Users;
 let ALL_Users = Users.ALL_Users;
 let AddUser = Users.AddUser;
-let log, warn, info, error;
+let log, warn, info, error, trace, table;
 log = vsf.log; warn = vsf.warn; info = vsf.info; error = vsf.error;
+trace = vsf.trace; table = vsf.table;
+// Automate Console  x Object Elements; priority X+2
 
 let b: any;
 b = " .. what's up";
@@ -52,7 +54,7 @@ let uid = 0/*  | Start.uid; */
 //let Users: any = [{ start_index: 1 }];
 //Start.Users = Users;
 let S = a.start(); // might replace it with exported value of vsf
-console.log("                                                                                                                             ⬆⬆⬆⬆⬆                      \n                                                      \n                                                                                                 The Console Line above which is a 🅱 \n                                                                                                 Lower Case B of the exported module,\n                                                                                                  is a proof that the object variable\n                                                                                                  had been successfully exported \n                                                                                                 into the Angular App Code\n                          \n🅰 Inside Angular App 🤓☝ \ntypeof a: " + typeof a, "\na equals: ", a, "\n a.b()       returns             ", a.b(), "\n a.start() returns             ", S);
+log("                                                                                                                             ⬆⬆⬆⬆⬆                      \n                                                      \n                                                                                                 The Console Line above which is a 🅱 \n                                                                                                 Lower Case B of the exported module,\n                                                                                                  is a proof that the object variable\n                                                                                                  had been successfully exported \n                                                                                                 into the Angular App Code\n                          \n🅰 Inside Angular App 🤓☝ \ntypeof a: " + typeof a, "\na equals: ", a, "\n a.b()       returns             ", a.b(), "\n a.start() returns             ", S);
 /* function stringifyObject(obj) {
   const result = {};
   for (const [key, value] of Object.entries(obj)) {
@@ -68,7 +70,7 @@ console.log("                                                                   
 
 //console.table([{ str: "a", val: a + "  => " + stringifyObject(a) }, { str: "a.start", val: a.start() + "  => " + a.start.toString() }, { str: "a.b", val: a.b() + "  => " + a.b.toString() }])
 
-console.table([{ str: "a", val: a.c(a) }, { str: "a.start", val: S }, { str: "a.b", val: a.b() }])
+table([{ str: "a", val: a.c(a) }, { str: "a.start", val: S }, { str: "a.b", val: a.b() }])
 
 //Start();
 //Start.AddUser(uid, "user 0");
