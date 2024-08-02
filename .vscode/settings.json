@@ -1,0 +1,11 @@
+{
+    "workbench.colorTheme": "1f9697bd-aec1-49ff-bdb4-c37ef8ace62b",
+    "themeRandomizer.themes.blacklist": [
+        "35422aa4-1396-4e76-8ec6-c5560884df22"
+    ],
+    "workbench.colorCustomizations": {
+        "editorInfo.foreground": "#0080ff6a",
+        "titleBar.activeBackground": "#464149dd",
+        "activityBar.background": "#3a353daa"
+    }
+}
