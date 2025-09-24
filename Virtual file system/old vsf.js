@@ -14,12 +14,24 @@ const consoleimg={load:function(e,{size:o=320,color:n="transparent"}={}){const t
     let angularPath="/assets/";
 let AngularState= isAngular ? "\n\n\n                                             Ｔｈｅ　Ｇｌｏｂａｌ　ＶＳＦ　Ｌｉｂｒａｒｙ　                                   \n\n                                                                       ｉｓ　ｒｕｎｎｉｎｇ\n\n 　                                                                         ｉｎｓｉｄｅ　                   　\n\n                                                   ＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋\n                                                    ｜Ａ｜｜Ｎ｜｜Ｇ｜｜Ｕ｜｜Ｌ｜｜Ａ｜｜Ｒ｜\n                                                    ＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋＋－＋\n\n\n                                                                              Ａｎｇｕｌａｒ \n\n\n    " 
     
-    : "No Angular, then you Can witness the power of Native JavaScript " + " for this enviornement" ;
+    : " \n\n No Angular, then you Can witness the power of Native JavaScript " + " for this enviornement \n\n\n\n\n" ;
+    
+    
     let isAngImg  =  isAngular ? "ang.png" : "js.jpg"  ;
     if ( isAngular) isAngImg=angularPath+isAngImg;
     consoleimg.load(isAngImg); 
     console.log("image path : "+isAngImg);
-    console.info(  AngularState  ); 
+    
+    if(!isAngular) 
+    {
+        p='margin: 0;\n color: hsl(230, 80%, 90%);\r\n    text-shadow:\r\n      0 0 1em hsla(320, 100%, 50%, 0.5),\r\n      0 0 0.125em hsla(320, 100%, 60%, 0.5),\r\n      -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),\r\n      0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);\n\n \n  font-size: 2.5rem;\n\n ';
+        
+        console.log('%c'+AngularState , p,"            Ｔｈｅ　Ｇｌｏｂａｌ \n\n　                ＶＳＦ \n\n　            Ｌｉｂｒａｒｙ　                                   \n\n            ｉｓ　ｒｕｎｎｉｎｇ\n\n\n\n\n");
+
+/*          console.log('%c            Ｔｈｅ　Ｇｌｏｂａｌ \n\n　                ＶＳＦ \n\n　            Ｌｉｂｒａｒｙ　                                   \n\n            ｉｓ　ｒｕｎｎｉｎｇ\n\n\n\n\n', p); */
+     }
+    else
+        console.info(  AngularState  ); 
 // consoleimg.load("js.jpg"); 
 // start below this line 
 let Users = [{ start_index: 1 }];
